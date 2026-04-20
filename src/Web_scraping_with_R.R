@@ -7,11 +7,7 @@ library(reticulate) # Run Python code in R
 
 # Scraping static webpages
 
-## Identify chrome browser location
-Sys.setenv(CHROMOTE_CHROME = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe")
-
 ## Set working directory
-setwd("C:\\Users\\huntmat\\Documents\\Tutorials\\Web scraping with R and Python\\web_scraping")
 
 ## Read webpage html
 url = "https://www.worldometers.info/coronavirus/"
