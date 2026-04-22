@@ -8,7 +8,7 @@ library(reticulate) # Run Python code in R
 # Scraping static webpages
 
 ## Set working directory
-setwd("C:\\Users\\huntmat\\Documents\\Tutorials\\Web scraping with R and Python\\web_scraping")
+
 
 ## Read webpage html
 url = "https://www.worldometers.info/coronavirus/"
