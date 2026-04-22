@@ -118,7 +118,7 @@ for i, section in enumerate(sections):
         #### Iterate through list of table rows
         for row in rows:
             ##### Get all columns (td and th elements)
-            cols = [c.text for c in row.find_elements(By.TAG_NAME, "td", "th")]
+            cols = [c.text for c in row.find_elements(By.TAG_NAME, "td")]
             if cols:  # skip empty rows
                 ##### Add all columns to data list
                 data.append(cols)

@@ -8,6 +8,7 @@ library(reticulate) # Run Python code in R
 # Scraping static webpages
 
 ## Set working directory
+setwd("C:\\Users\\huntmat\\Documents\\Tutorials\\Web scraping with R and Python\\web_scraping")
 
 ## Read webpage html
 url = "https://www.worldometers.info/coronavirus/"
@@ -84,6 +85,7 @@ url = "https://health-infobase.canada.ca/respiratory-virus-surveillance/influenz
 page = read_html(url)
 tables = page %>% html_nodes("table") %>% html_table()
 
+
 ## Web scraping in Python
 source_python("src\\Web_scraping_with_Python.py")
 
@@ -96,4 +98,6 @@ for(i in 0:11){
     )
   }, error=function(e){})
 }
+
+
 
